@@ -1,10 +1,9 @@
 {
     "name": "rcarvs/odoo-ripcord",
     "description": "Rippo without XMLRPC extension dependency",
-    "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
-        "rcarvs/ripcord": "*"
+        "rcarvs/ripcord": "dev-master"
     },
     "require-dev": {
         "kint-php/kint": "*"

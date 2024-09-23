@@ -4,58 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ae05fc733ba6ebbc7dd206424b493431",
+    "content-hash": "3fb8fbe9a958aab35303000c0688d4cd",
     "packages": [
-        {
-            "name": "darkaonline/ripcord",
-            "version": "v0.1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/DarkaOnLine/Ripcord.git",
-                "reference": "9cfed0e7015663c9739d4eb927952f040c8e8280"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/DarkaOnLine/Ripcord/zipball/9cfed0e7015663c9739d4eb927952f040c8e8280",
-                "reference": "9cfed0e7015663c9739d4eb927952f040c8e8280",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.14@dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ripcord\\": "src/Ripcord"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Darius Matulionis",
-                    "email": "darius@matulionis.lt"
-                }
-            ],
-            "description": "RPC client and server around PHP's xmlrpc library",
-            "keywords": [
-                "rpc",
-                "xml",
-                "xmlrpc"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/DarkaOnLine",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-03-25T06:28:19+00:00"
-        },
         {
             "name": "phpxmlrpc/phpxmlrpc",
             "version": "4.11.0",
@@ -115,6 +65,60 @@
                 "source": "https://github.com/gggeek/phpxmlrpc/tree/4.11.0"
             },
             "time": "2024-09-07T14:44:05+00:00"
+        },
+        {
+            "name": "rcarvs/ripcord",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rcarvs/Ripcord.git",
+                "reference": "2ee7aee62d3d5c47e97b45a2e85eb09816c7a12c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rcarvs/Ripcord/zipball/2ee7aee62d3d5c47e97b45a2e85eb09816c7a12c",
+                "reference": "2ee7aee62d3d5c47e97b45a2e85eb09816c7a12c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "phpxmlrpc/phpxmlrpc": "^4.11"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14@dev"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ripcord\\": "src/Ripcord"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "rcarvs"
+                }
+            ],
+            "description": "RPC client and server around PHP's xmlrpc library but without XMLRPC extension necessity",
+            "keywords": [
+                "rpc",
+                "xml",
+                "xmlrpc"
+            ],
+            "support": {
+                "source": "https://github.com/rcarvs/Ripcord/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/DarkaOnLine",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-09-23T14:34:04+00:00"
         }
     ],
     "packages-dev": [
@@ -191,7 +195,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rcarvs/ripcord": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
