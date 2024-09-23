@@ -4,9 +4,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
-
-        "rcarvs/ripcord": "*",
-        "phpxmlrpc/phpxmlrpc": "^4.11"
+        "rcarvs/ripcord": "*"
     },
     "require-dev": {
         "kint-php/kint": "*"
