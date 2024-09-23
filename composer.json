@@ -5,7 +5,7 @@
     "require": {
         "php": ">=7.0",
 
-        "darkaonline/ripcord": "^0.1.6",
+        "rcarvs/ripcord": "*",
         "phpxmlrpc/phpxmlrpc": "^4.11"
     },
     "require-dev": {
